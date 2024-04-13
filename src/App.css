@@ -3,20 +3,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: rgb(37, 37, 228);
+  background-image: linear-gradient(to left, #898304, #09bd03);
 }
 
 .Header {
   margin: 32px;
+  font-size: 30px;
+  font-family: space grotesk;
+  font-weight: 900;
+  color: rgb(100, 37, 172);
 }
 
-.Row {
+.Row{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 200px;
   height: 64px;
+  margin-left: 145px;
 }
 
 p {
@@ -24,7 +32,17 @@ p {
 }
 
 .BasicTracker {
-  border: 1px solid black;
-  padding: 16px;
-  margin-bottom: 128px;
+  border: 4px solid black;
+  width: 500px;
+  padding: 5px;
+  margin-bottom: 60px;
+  color:rgb(17, 27, 218);
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+}
+
+.lessgo{
+  font-weight: 600;
+  font-family: space grotesk;
 }

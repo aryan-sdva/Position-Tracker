@@ -9,7 +9,6 @@ const MousePosition = ({ render }) => {
 
   useEffect(() => {
     const handleMousePositionChange = (e) => {
-      // Use e.clientX and e.clientY to access the mouse position on the screen
       setMousePosition({
         x: e.clientX,
         y: e.clientY,
@@ -22,17 +21,13 @@ const MousePosition = ({ render }) => {
       window.removeEventListener("mousemove", handleMousePositionChange);
     };
   }, []);
-
-  // What should be returned here?
   return render({mousePosition});
 };
 
-// This component should not receive any props
 const PanelMouseLogger = () => {
-  // The below if statement can be removed after the render props pattern is implemented
   return (
     <div className="BasicTracker">
-      <p>Mouse position:</p>
+      <p className="Row">Mouse position:</p>
       <MousePosition
         render={({ mousePosition }) => (
           <div className="Row">
@@ -45,13 +40,11 @@ const PanelMouseLogger = () => {
   );
 };
 
-// This component should not receive any props
 const PointMouseLogger = () => {
-  // The below if statement can be removed after the render props pattern is implemented
   return (
     <MousePosition
       render={({ mousePosition })=> (
-    <p>
+    <p className="lessgo">
       ({mousePosition.x}, {mousePosition.y})
         </p>
 )}
