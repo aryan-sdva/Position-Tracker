@@ -1,6 +1,5 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import { LuMousePointer2 } from "react-icons/lu";
 
 const MousePosition = ({ render }) => {
   const [mousePosition, setMousePosition] = useState({
@@ -64,7 +63,7 @@ function App() {
   return (
 
     <div className="App">
-      <header className="Header">Cursor Position Tracker <LuMousePointer2 /></header>
+      <header className="Header">Cursor Position Tracker:</header>
       <PanelMouseLogger />
       <PointMouseLogger />
     </div>
